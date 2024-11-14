@@ -1,0 +1,904 @@
+[
+    {
+        "species_name": "Abies beshanzuensis",
+        "common_name": "Baishan fir",
+        "type": "Plant (Tree)",
+        "estimated_population": 5,
+        "threats": [
+            "Agriculture",
+            "fire"
+        ]
+    },
+    {
+        "species_name": "Actinote zikani",
+        "common_name": null,
+        "type": "Insect",
+        "estimated_population": null,
+        "threats": [
+            "Habitat loss from human expansion"
+        ]
+    },
+    {
+        "species_name": "Aipysurus foliosquama",
+        "common_name": "Leaf scaled sea-snake",
+        "type": "Reptile",
+        "estimated_population": null,
+        "threats": [
+            "Unknown\u00e2\u20ac\u201dprobably degradation of coral reef habitat"
+        ]
+    },
+    {
+        "species_name": "Amanipodagrion gilliesi",
+        "common_name": "Amani flatwing",
+        "type": "Insect",
+        "estimated_population": 500,
+        "threats": [
+            "Population pressure",
+            "water pollution"
+        ]
+    },
+    {
+        "species_name": "Antisolabis seychellensis",
+        "common_name": null,
+        "type": "Insect",
+        "estimated_population": null,
+        "threats": [
+            "Invasive species",
+            "climate change"
+        ]
+    },
+    {
+        "species_name": "Antilophia bokermanni",
+        "common_name": "Araripe manakin",
+        "type": "Bird",
+        "estimated_population": 779,
+        "threats": [
+            "Recreational facilities",
+            "water diversion"
+        ]
+    },
+    {
+        "species_name": "Aphanius transgrediens",
+        "common_name": "Aci G\u00c3\u00b6 toothcarp",
+        "type": "Fish",
+        "estimated_population": "Few hundred pairs",
+        "threats": [
+            "Competition",
+            "predation by Gambusia",
+            "road construction"
+        ]
+    },
+    {
+        "species_name": "Aproteles bulmerae",
+        "common_name": "Bulmer's fruit bat",
+        "type": "Mammal",
+        "estimated_population": 150,
+        "threats": [
+            "Hunting",
+            "cave disturbance"
+        ]
+    },
+    {
+        "species_name": "Ardea insignis",
+        "common_name": "White bellied heron",
+        "type": "Bird",
+        "estimated_population": 70,
+        "threats": [
+            "Hydropower development"
+        ]
+    },
+    {
+        "species_name": "Ardeotis nigriceps",
+        "common_name": "Great Indian bustard",
+        "type": "Bird",
+        "estimated_population": 50,
+        "threats": [
+            "Agricultural development",
+            "energy transmission lines"
+        ]
+    },
+    {
+        "species_name": "Astrochelys yniphora",
+        "common_name": "Ploughshare tortoise",
+        "type": "Reptile",
+        "estimated_population": 440,
+        "threats": [
+            "Illegal collection for international pet trade"
+        ]
+    },
+    {
+        "species_name": "Atelopus balios",
+        "common_name": "Rio Pescado stubfoot toad",
+        "type": "Amphibian",
+        "estimated_population": null,
+        "threats": [
+            "Chytridiomycosis",
+            "logging",
+            "agricultural expansion"
+        ]
+    },
+    {
+        "species_name": "Aythya innotata",
+        "common_name": "Madagascar pochard",
+        "type": "Bird",
+        "estimated_population": 80,
+        "threats": [
+            "Agriculture",
+            "hunting",
+            "fishing",
+            "introduced fish"
+        ]
+    },
+    {
+        "species_name": "Azurina eupalama",
+        "common_name": "Galapagos damsel fish",
+        "type": "Fish",
+        "estimated_population": null,
+        "threats": [
+            "Climate change",
+            "oceanographic changes related to the 1982/1983 El Nino"
+        ]
+    },
+    {
+        "species_name": "Bahaba taipingensis",
+        "common_name": "Giant yellow croaker",
+        "type": "Fish",
+        "estimated_population": null,
+        "threats": [
+            "Over-fishing due to value of swim-bladder in traditional medicine"
+        ]
+    },
+    {
+        "species_name": "Batagur baska",
+        "common_name": "Common batagur",
+        "type": "Reptile",
+        "estimated_population": null,
+        "threats": [
+            "Illegal export to China"
+        ]
+    },
+    {
+        "species_name": "Bazzania bhutanica",
+        "common_name": null,
+        "type": "Plant",
+        "estimated_population": 2,
+        "threats": [
+            "Forest clearance",
+            "overgrazing",
+            "development"
+        ]
+    },
+    {
+        "species_name": "Beatragus hunteri",
+        "common_name": "Hirola",
+        "type": "Mammal",
+        "estimated_population": 1000,
+        "threats": [
+            "Habitat loss",
+            "competition with livestock",
+            "poaching"
+        ]
+    },
+    {
+        "species_name": "Bombus franklini",
+        "common_name": "Franklin's bumblebee",
+        "type": "Insect",
+        "estimated_population": null,
+        "threats": [
+            "Disease from commercial bees",
+            "habitat destruction and degradation"
+        ]
+    },
+    {
+        "species_name": "Brachyteles hypoxanthus",
+        "common_name": "Northern muriqui",
+        "type": "Mammal",
+        "estimated_population": 1000,
+        "threats": [
+            "Large-scale deforestation and logging"
+        ]
+    },
+    {
+        "species_name": "Bradypus pygmaeus",
+        "common_name": "Pygmy three-toed sloth",
+        "type": "Mammal",
+        "estimated_population": 500,
+        "threats": [
+            "Illegal logging of mangrove forests for firewood and construction",
+            "hunting"
+        ]
+    },
+    {
+        "species_name": "Callitriche pulchra",
+        "common_name": null,
+        "type": "Plant",
+        "estimated_population": null,
+        "threats": [
+            "Habitat exploitation by livestock",
+            "modification of the pool by locals"
+        ]
+    },
+    {
+        "species_name": "Calumma tarzan",
+        "common_name": "Tarzan's chameleon",
+        "type": "Reptile",
+        "estimated_population": 100,
+        "threats": [
+            "Agriculture"
+        ]
+    },
+    {
+        "species_name": "Cavia intermedia",
+        "common_name": "Santa Catarina's guinea pig",
+        "type": "Mammal",
+        "estimated_population": 40,
+        "threats": [
+            "Habitat disturbance",
+            "possible hunting",
+            "small population"
+        ]
+    },
+    {
+        "species_name": "Cercopithecus roloway",
+        "common_name": "Roloway guenon",
+        "type": "Mammal",
+        "estimated_population": null,
+        "threats": [
+            "Hunting",
+            "habitat loss"
+        ]
+    },
+    {
+        "species_name": "Coleura seychellensis",
+        "common_name": "Seychelles sheath-tailed bat",
+        "type": "Mammal",
+        "estimated_population": 100,
+        "threats": [
+            "Habitat degradation",
+            "predation by invasive species"
+        ]
+    },
+    {
+        "species_name": "Cryptomyces maximus",
+        "common_name": "Willow blister",
+        "type": "Fungi",
+        "estimated_population": null,
+        "threats": [
+            "Limited habitat"
+        ]
+    },
+    {
+        "species_name": "Cryptotis nelsoni",
+        "common_name": "Nelson's small-eared shrew",
+        "type": "Mammal",
+        "estimated_population": null,
+        "threats": [
+            "Logging",
+            "cattle grazing",
+            "fire",
+            "agriculture"
+        ]
+    },
+    {
+        "species_name": "Cyclura collei",
+        "common_name": "Jamaican iguana",
+        "type": "Reptile",
+        "estimated_population": null,
+        "threats": [
+            "Habitat destruction",
+            "predation by introduced species"
+        ]
+    },
+    {
+        "species_name": "Daubentonia madagascariensis",
+        "common_name": "Aye-aye",
+        "type": "Mammal",
+        "estimated_population": null,
+        "threats": [
+            "Poaching",
+            "limited habitat"
+        ]
+    },
+    {
+        "species_name": "Dendrophylax fawcettii",
+        "common_name": "Cayman Islands ghost orchid",
+        "type": "Plant",
+        "estimated_population": null,
+        "threats": [
+            "Infrastructure development"
+        ]
+    },
+    {
+        "species_name": "Dicerorhinus sumatrensis",
+        "common_name": "Sumatran rhino",
+        "type": "Mammal",
+        "estimated_population": 100,
+        "threats": [
+            "Hunting (horn is used in traditional medicine)"
+        ]
+    },
+    {
+        "species_name": "Diomedea amsterdamensis",
+        "common_name": "Amsterdam albatross",
+        "type": "Bird",
+        "estimated_population": 100,
+        "threats": [
+            "Disease",
+            "incidental by-catch in long-line fishing"
+        ]
+    },
+    {
+        "species_name": "Dioscorea strydomiana",
+        "common_name": "Wild yam",
+        "type": "Plant",
+        "estimated_population": 200,
+        "threats": [
+            "Collection for medicinal use"
+        ]
+    },
+    {
+        "species_name": "Diospyros katendei",
+        "common_name": null,
+        "type": "Plant",
+        "estimated_population": 20,
+        "threats": [
+            "Agricultural activity",
+            "illegal tree felling",
+            "alluvial gold digging",
+            "small population"
+        ]
+    },
+    {
+        "species_name": "Dipterocarpus lamellatus",
+        "common_name": null,
+        "type": "Plant",
+        "estimated_population": 12,
+        "threats": [
+            "Logging of lowland forest",
+            "creation of industrial plantations"
+        ]
+    },
+    {
+        "species_name": "Discoglossus nigriventer",
+        "common_name": "Hula painted frog",
+        "type": "Amphibian",
+        "estimated_population": null,
+        "threats": [
+            "Predation by birds",
+            "range restriction due to habitat destruction"
+        ]
+    },
+    {
+        "species_name": "Dombeya mauritiana",
+        "common_name": null,
+        "type": "Plant",
+        "estimated_population": null,
+        "threats": [
+            "Encroachment by invasive plant species",
+            "habitat loss due to cannabis cultivation"
+        ]
+    },
+    {
+        "species_name": "Elaeocarpus bojeri",
+        "common_name": "Bois Dentelle",
+        "type": "Plant (Tree)",
+        "estimated_population": 10,
+        "threats": [
+            "Habitat degradation"
+        ]
+    },
+    {
+        "species_name": "Eleutherodactylus glandulifer",
+        "common_name": "La Hotte glanded frog",
+        "type": "Amphibian",
+        "estimated_population": null,
+        "threats": [
+            "Charcoal production",
+            "slash-and-burn agriculture"
+        ]
+    },
+    {
+        "species_name": "Eleutherodactylus thorectes",
+        "common_name": "Macaya breast-spot frog",
+        "type": "Amphibian",
+        "estimated_population": null,
+        "threats": [
+            "Charcoal production",
+            "slash-and-burn agriculture"
+        ]
+    },
+    {
+        "species_name": "Eriosyce chilensis",
+        "common_name": "Chilenito (cactus)",
+        "type": "Plant",
+        "estimated_population": 500,
+        "threats": [
+            "Collection of flowering plants"
+        ]
+    },
+    {
+        "species_name": "Erythrina schliebenii",
+        "common_name": "Coral tree",
+        "type": "Plant",
+        "estimated_population": 50,
+        "threats": [
+            "Limited habitat",
+            "small population size increase vulnerability"
+        ]
+    },
+    {
+        "species_name": "Euphorbia tanaensis",
+        "common_name": null,
+        "type": "Plant (Tree)",
+        "estimated_population": 4,
+        "threats": [
+            "Illegal logging",
+            "agricultural expansion",
+            "infrastructure development"
+        ]
+    },
+    {
+        "species_name": "Eurynorhyncus pygmeus",
+        "common_name": "Spoon-billed sandpiper",
+        "type": "Bird",
+        "estimated_population": 100,
+        "threats": [
+            "Trapping",
+            "land reclamation"
+        ]
+    },
+    {
+        "species_name": "Ficus katendei",
+        "common_name": null,
+        "type": "Plant",
+        "estimated_population": 50,
+        "threats": [
+            "Agriculture",
+            "illegal tree felling",
+            "alluvial gold digging"
+        ]
+    },
+    {
+        "species_name": "Geronticus eremita",
+        "common_name": "Northern bald ibis",
+        "type": "Bird",
+        "estimated_population": 3000,
+        "threats": [
+            "Habitat degradation and destruction",
+            "hunting"
+        ]
+    },
+    {
+        "species_name": "Gigasiphon macrosiphon",
+        "common_name": null,
+        "type": "Plant (Flower)",
+        "estimated_population": 33,
+        "threats": [
+            "Timber extraction",
+            "agriculture",
+            "encroachment and development",
+            "predation by wild pigs"
+        ]
+    },
+    {
+        "species_name": "Gocea ohridana",
+        "common_name": null,
+        "type": "Mollusc",
+        "estimated_population": null,
+        "threats": [
+            "Increasing pollution levels",
+            "off-take of water",
+            "sedimentation events"
+        ]
+    },
+    {
+        "species_name": "Heleophryne rosei",
+        "common_name": "Table mountain ghost frog",
+        "type": "Amphibian",
+        "estimated_population": null,
+        "threats": [
+            "Invasive plants",
+            "water abstraction"
+        ]
+    },
+    {
+        "species_name": "Hemicycla paeteliana",
+        "common_name": null,
+        "type": "Mollusc (Land snail)",
+        "estimated_population": null,
+        "threats": [
+            "Overgrazing",
+            "trampling by goats and tourists"
+        ]
+    },
+    {
+        "species_name": "Heteromirafa sidamoensis",
+        "common_name": "Liben lark",
+        "type": "Bird",
+        "estimated_population": 90,
+        "threats": [
+            "Agricultural expansion",
+            "overgrazing",
+            "fire suppression"
+        ]
+    },
+    {
+        "species_name": "Hibiscadelphus woodii",
+        "common_name": null,
+        "type": "Plant (Tree)",
+        "estimated_population": null,
+        "threats": [
+            "Habitat degradation due to feral ungulates",
+            "competition with invasive plant species"
+        ]
+    },
+    {
+        "species_name": "Hucho perryi",
+        "common_name": "Sakhalin taimen",
+        "type": "Fish",
+        "estimated_population": null,
+        "threats": [
+            "Overfishing",
+            "damming",
+            "agriculture",
+            "other land use"
+        ]
+    },
+    {
+        "species_name": "Johora singaporensis",
+        "common_name": "Freshwater crab",
+        "type": "Crustacean",
+        "estimated_population": null,
+        "threats": [
+            "Habitat degradation due to reduction in water quality and quantity"
+        ]
+    },
+    {
+        "species_name": "Lathyrus belinensis",
+        "common_name": "Belin vetchling",
+        "type": "Plant",
+        "estimated_population": 1000,
+        "threats": [
+            "Urbanisation",
+            "over-grazing",
+            "conifer planting",
+            "road widening"
+        ]
+    },
+    {
+        "species_name": "Leiopelma archeyi",
+        "common_name": "Archey's frog",
+        "type": "Amphibian",
+        "estimated_population": null,
+        "threats": [
+            "Chytridiomycosis",
+            "predation by invasive species"
+        ]
+    },
+    {
+        "species_name": "Lithobates sevosus",
+        "common_name": "Dusky gopher frog",
+        "type": "Amphibian",
+        "estimated_population": 60,
+        "threats": [
+            "Fungal disease",
+            "climate change",
+            "land-use changes"
+        ]
+    },
+    {
+        "species_name": "Lophura edwardsi",
+        "common_name": "Edwards's pheasant",
+        "type": "Bird",
+        "estimated_population": null,
+        "threats": [
+            "Habitat loss",
+            "hunting"
+        ]
+    },
+    {
+        "species_name": "Magnolia wolfii",
+        "common_name": null,
+        "type": "Plant (Tree)",
+        "estimated_population": 3,
+        "threats": [
+            "Isolation of species",
+            "low regeneration rates"
+        ]
+    },
+    {
+        "species_name": "Margaritifera marocana",
+        "common_name": null,
+        "type": "Mollusc",
+        "estimated_population": 250,
+        "threats": [
+            "Pollution",
+            "development"
+        ]
+    },
+    {
+        "species_name": "Moominia willii",
+        "common_name": null,
+        "type": "Mollusc (Snail)",
+        "estimated_population": 500,
+        "threats": [
+            "Invasive species",
+            "climate change"
+        ]
+    },
+    {
+        "species_name": "Natalus primus",
+        "common_name": "Cuban greater funnel-eared bat",
+        "type": "Mammal",
+        "estimated_population": 100,
+        "threats": [
+            "Habitat loss",
+            "human disturbance"
+        ]
+    },
+    {
+        "species_name": "Nepenthes attenboroughii",
+        "common_name": "Attenborough's pitcher plant",
+        "type": "Plant",
+        "estimated_population": null,
+        "threats": [
+            "Poaching"
+        ]
+    },
+    {
+        "species_name": "Nomascus hainanus",
+        "common_name": "Hainan black crested gibbon",
+        "type": "Mammal",
+        "estimated_population": 20,
+        "threats": [
+            "Hunting"
+        ]
+    },
+    {
+        "species_name": "Neurergus kaiseri",
+        "common_name": "Luristan newt",
+        "type": "Amphibian",
+        "estimated_population": 1000,
+        "threats": [
+            "Illegal collection for pet trade"
+        ]
+    },
+    {
+        "species_name": "Oreocnemis phoenix",
+        "common_name": "Mulanje red damsel",
+        "type": "Insect (Damselfly)",
+        "estimated_population": null,
+        "threats": [
+            "Habitat destruction and degradation due to drainage",
+            "agricultural expansion",
+            "exploitation of forest"
+        ]
+    },
+    {
+        "species_name": "Pangasius sanitwongsei",
+        "common_name": "Pangasid catfish",
+        "type": "Fish",
+        "estimated_population": null,
+        "threats": [
+            "Overfishing",
+            "collection for aquarium trade"
+        ]
+    },
+    {
+        "species_name": "Parides burchellanus",
+        "common_name": null,
+        "type": "Insect (Butterfly)",
+        "estimated_population": 100,
+        "threats": [
+            "Human expansion",
+            "limited range"
+        ]
+    },
+    {
+        "species_name": "Phocoena sinus",
+        "common_name": "Vaquita",
+        "type": "Mammal",
+        "estimated_population": 12,
+        "threats": [
+            "Capture in fishermen's gillnets"
+        ]
+    },
+    {
+        "species_name": "Picea neoveitchii",
+        "common_name": null,
+        "type": "Plant (Tree)",
+        "estimated_population": null,
+        "threats": [
+            "Destruction of forest"
+        ]
+    },
+    {
+        "species_name": "Pinus squamata",
+        "common_name": "Qiaojia pine",
+        "type": "Plant (Tree)",
+        "estimated_population": 25,
+        "threats": [
+            "Limited distribution",
+            "small population size"
+        ]
+    },
+    {
+        "species_name": "Poecilotheria metallica",
+        "common_name": "Gooty tarantula",
+        "type": "Spider",
+        "estimated_population": null,
+        "threats": [
+            "Deforestation",
+            "firewood collection",
+            "civil unrest"
+        ]
+    },
+    {
+        "species_name": "Pomarea whitneyi",
+        "common_name": "Fatuhiva monarch",
+        "type": "Bird",
+        "estimated_population": 50,
+        "threats": [
+            "Predation by introduced species (Rattus rattus and feral cats)"
+        ]
+    },
+    {
+        "species_name": "Pristis pristis",
+        "common_name": "Common sawfish",
+        "type": "Fish",
+        "estimated_population": null,
+        "threats": [
+            "Exploitation has removed the species from 95% of its historical range"
+        ]
+    },
+    {
+        "species_name": "Propithecus candidus",
+        "common_name": "Silky sifaka",
+        "type": "Mammal",
+        "estimated_population": 100,
+        "threats": [
+            "Hunting",
+            "habitat disturbance"
+        ]
+    },
+    {
+        "species_name": "Psammobates geometricus",
+        "common_name": "Geometric tortoise",
+        "type": "Reptile",
+        "estimated_population": null,
+        "threats": [
+            "Loss of habitat",
+            "destruction",
+            "predation"
+        ]
+    },
+    {
+        "species_name": "Pseudoryx nghetinhensis",
+        "common_name": "Saola",
+        "type": "Mammal",
+        "estimated_population": null,
+        "threats": [
+            "Habitat destruction",
+            "hunting"
+        ]
+    },
+    {
+        "species_name": "Psiadia cataractae",
+        "common_name": null,
+        "type": "Plant",
+        "estimated_population": null,
+        "threats": [
+            "Development project",
+            "competition from invasive plant species"
+        ]
+    },
+    {
+        "species_name": "Psorodonotus ebneri",
+        "common_name": "Beydaglari bush-cricket",
+        "type": "Insect",
+        "estimated_population": null,
+        "threats": [
+            "Climate change",
+            "habitat loss"
+        ]
+    },
+    {
+        "species_name": "Rafetus swinhoei",
+        "common_name": "Red River giant softshell turtle",
+        "type": "Reptile",
+        "estimated_population": 3,
+        "threats": [
+            "Hunting for consumption",
+            "wetland destruction",
+            "pollution"
+        ]
+    },
+    {
+        "species_name": "Rhinoceros sondaicus",
+        "common_name": "Javan rhino",
+        "type": "Mammal",
+        "estimated_population": 100,
+        "threats": [
+            "Hunting for traditional medicine",
+            "small population size"
+        ]
+    },
+    {
+        "species_name": "Rhinopithecus avunculus",
+        "common_name": "Tonkin snub-nosed monkey",
+        "type": "Mammal",
+        "estimated_population": 200,
+        "threats": [
+            "Habitat loss",
+            "hunting"
+        ]
+    },
+    {
+        "species_name": "Rhizanthella gardneri",
+        "common_name": "West Australian underground orchid",
+        "type": "Plant (Orchid)",
+        "estimated_population": 100,
+        "threats": [
+            "Land clearance for agriculture",
+            "climate change",
+            "salinisation"
+        ]
+    },
+    {
+        "species_name": "Rhynchocyon spp.",
+        "common_name": "Boni giant sengi",
+        "type": "Mammal",
+        "estimated_population": null,
+        "threats": [
+            "Development causing habitat loss"
+        ]
+    },
+    {
+        "species_name": "Risiocnemis seidenschwarzi",
+        "common_name": "Cebu frill-wing",
+        "type": "Insect (Damselfly)",
+        "estimated_population": null,
+        "threats": [
+            "Habitat degradation and destruction"
+        ]
+    },
+    {
+        "species_name": "Rosa arabica",
+        "common_name": null,
+        "type": "Plant",
+        "estimated_population": 10,
+        "threats": [
+            "Domestic animal grazing",
+            "climate change",
+            "drought",
+            "medicinal plant collecting",
+            "limited range"
+        ]
+    },
+    {
+        "species_name": "Salanoia durrelli",
+        "common_name": "Durrell's vontsira",
+        "type": "Mammal",
+        "estimated_population": null,
+        "threats": [
+            "Loss of habitat"
+        ]
+    },
+    {
+        "species_name": "Santamartamys rufodorsalis",
+        "common_name": "Red crested tree rat",
+        "type": "Mammal",
+        "estimated_population": null,
+        "threats": [
+            "Urban development",
+            "coffee cultivation"
+        ]
+    },
+    {
+        "species_name": "Scaturiginichthys vermeilipinnis",
+        "common_name": "Red-finned blue-eye",
+        "type": "Fish",
+        "estimated_population": 2,
+        "threats": []
+    }
+]

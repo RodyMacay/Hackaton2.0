@@ -1,0 +1,13 @@
+{% extends 'components/base.html' %}
+
+{% block title %}Inicio - Cloud Gallery IA{% endblock %}
+
+{% load static %}
+
+{% block content %}
+    <h1 class="text-2xl font-semibold">Bienvenido a Cloud Gallery IA</h1>
+    
+    {% include 'components/recent_photos.html' %}
+    
+{% endblock %}
+<script src="{% static 'js/home.js' %}" defer></script>

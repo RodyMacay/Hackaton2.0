@@ -1,0 +1,466 @@
+[
+    {
+        "original_location": "Baishanzu Mountain, Zhejiang, China",
+        "details": null
+    },
+    {
+        "original_location": "Near São Paulo, Atlantic forest, Brazil",
+        "details": null
+    },
+    {
+        "original_location": "Ashmore Reef and Hibernia Reef, Timor Sea",
+        "details": null
+    },
+    {
+        "original_location": "Amani-Sigi Forest, Usambara Mountains, Tanzania",
+        "details": null
+    },
+    {
+        "original_location": "Morne Blanc, Mahé island, Seychelles",
+        "details": null
+    },
+    {
+        "original_location": "Chapado do Araripe, South Ceará, Brazil",
+        "details": null
+    },
+    {
+        "original_location": "South-eastern shore of former Lake Aci, Turkey",
+        "details": null
+    },
+    {
+        "original_location": "Luplupwintern Cave, Western Province, Papua NG",
+        "details": null
+    },
+    {
+        "original_location": "Bhutan, North East India, Myanmar",
+        "details": null
+    },
+    {
+        "original_location": "Rajasthan, Gujarat, Maharashtra, India",
+        "details": null
+    },
+    {
+        "original_location": "Baly Bay region, northwestern Madagascar",
+        "details": null
+    },
+    {
+        "original_location": "Azuay, Cañar, Guyas provinces, Ecuador",
+        "details": null
+    },
+    {
+        "original_location": "Volcanic lakes north of Bealanana, Madagascar",
+        "details": null
+    },
+    {
+        "original_location": "Unknown",
+        "details": {
+            "country": null,
+            "region": null,
+            "city": null
+        }
+    },
+    {
+        "original_location": "Chinese coast from Yangtze River, China to Hong Kong",
+        "details": null
+    },
+    {
+        "original_location": "Bangladesh, Cambodia, India, Indonesia, Malaysia",
+        "details": null
+    },
+    {
+        "original_location": "Budini and Lafeti Khola, Bhutan",
+        "details": null
+    },
+    {
+        "original_location": "South-east Kenya, possibly south-west Somalia",
+        "details": null
+    },
+    {
+        "original_location": "Oregon and California",
+        "details": {
+            "country": null,
+            "region": null,
+            "city": null
+        }
+    },
+    {
+        "original_location": "Atlantic forest, south-eastern Brazil",
+        "details": null
+    },
+    {
+        "original_location": "Isla Escudo de Veraguas, Panama",
+        "details": {
+            "country": null,
+            "region": null,
+            "city": null
+        }
+    },
+    {
+        "original_location": "Pool on Gavdos, Greece",
+        "details": null
+    },
+    {
+        "original_location": "Anosibe An'Ala region, eastern Madagascar",
+        "details": null
+    },
+    {
+        "original_location": "Moleques do Sul Island, Santa Catarina, Brazil",
+        "details": null
+    },
+    {
+        "original_location": "Côte d'Ivoire",
+        "details": {
+            "country": null,
+            "region": null,
+            "city": null
+        }
+    },
+    {
+        "original_location": "Two small caves on Silhouette and Mahé, Seychelles",
+        "details": null
+    },
+    {
+        "original_location": "Pembrokeshire, United Kingdom",
+        "details": {
+            "country": null,
+            "region": null,
+            "city": null
+        }
+    },
+    {
+        "original_location": "Volcán San Martín Tuxtla, Veracruz, Mexico",
+        "details": null
+    },
+    {
+        "original_location": "Hellshire Hills, Jamaica",
+        "details": {
+            "country": null,
+            "region": null,
+            "city": null
+        }
+    },
+    {
+        "original_location": "Deciduous forest, East Madagascar",
+        "details": null
+    },
+    {
+        "original_location": "Ironwood Forest, George Town, Grand Cayman",
+        "details": null
+    },
+    {
+        "original_location": "Sabah, Sarawak, Peninsular Malaysia, Kalimantan, Sumatra, Indonesia",
+        "details": null
+    },
+    {
+        "original_location": "Breeds on Plateuau des Tourbières, Amsterdam Island, Indian Ocean",
+        "details": null
+    },
+    {
+        "original_location": "Oshoek area, Mpumalanga, South Africa",
+        "details": null
+    },
+    {
+        "original_location": "Kasyoha-Kitomi Forest Reserve, Uganda",
+        "details": {
+            "country": null,
+            "region": null,
+            "city": null
+        }
+    },
+    {
+        "original_location": "Siangau Forest Reserve, Sabah, Malaysia",
+        "details": null
+    },
+    {
+        "original_location": "Hula Valley, Israel",
+        "details": {
+            "country": null,
+            "region": null,
+            "city": null
+        }
+    },
+    {
+        "original_location": "Mauritius",
+        "details": {
+            "country": null,
+            "region": null,
+            "city": null
+        }
+    },
+    {
+        "original_location": "Grand Bassin, Mauritius",
+        "details": {
+            "country": null,
+            "region": null,
+            "city": null
+        }
+    },
+    {
+        "original_location": "Massif de la Hotte, Haiti",
+        "details": {
+            "country": null,
+            "region": null,
+            "city": null
+        }
+    },
+    {
+        "original_location": "Formon and Macaya peaks, Masif de la Hotte, Haiti",
+        "details": null
+    },
+    {
+        "original_location": "Pta Molles and Pichidungui, Chile",
+        "details": null
+    },
+    {
+        "original_location": "Namatimbili-Ngarama Forest, Tanzania",
+        "details": null
+    },
+    {
+        "original_location": "Witu Forest Reserve, Kenya",
+        "details": null
+    },
+    {
+        "original_location": "Breeds in Russia, migrates along the East Asian-Australasian Flyway to wintering grounds in India, Bangladesh, Myanmar",
+        "details": null
+    },
+    {
+        "original_location": "Kasyoha-Kitomi Forest Reserve, Ishasha River, Uganda",
+        "details": null
+    },
+    {
+        "original_location": "Breeds in Morocco, Turkey, Syria; winters in central Ethiopia",
+        "details": null
+    },
+    {
+        "original_location": "Kaya Muhaka, Gongoni and Mrima Forest Reserves, Kenya; Amani Nature Reserve, West Kilombero Scarp Forest Reserve, Kihansi Gorge, Tanzania",
+        "details": null
+    },
+    {
+        "original_location": "Lake Ohrid, Macedonia",
+        "details": {
+            "country": null,
+            "region": null,
+            "city": null
+        }
+    },
+    {
+        "original_location": "Table Mountain, Western Cape Province, South Africa",
+        "details": {
+            "country": null,
+            "region": null,
+            "city": null
+        }
+    },
+    {
+        "original_location": "Jandia peninsula, Fuerteventura, Canary Islands",
+        "details": null
+    },
+    {
+        "original_location": "Liben Plains, southern Ethiopia",
+        "details": null
+    },
+    {
+        "original_location": "Kalalau Valley, Hawaii",
+        "details": null
+    },
+    {
+        "original_location": "Russian and Japanese rivers, Pacific Ocean between Russia and Japan",
+        "details": null
+    },
+    {
+        "original_location": "Bukit Timah Nature Reserve and streamlet near Bukit Batok, Singapore",
+        "details": null
+    },
+    {
+        "original_location": "Outskirts of Belin village, Antalya, Turkey",
+        "details": null
+    },
+    {
+        "original_location": "Coromandel peninsula and Whareorino Forest, New Zealand",
+        "details": null
+    },
+    {
+        "original_location": "Harrison County, Mississippi, USA",
+        "details": {
+            "country": null,
+            "region": null,
+            "city": null
+        }
+    },
+    {
+        "original_location": "Quang Binh, Quang Tri, Thua Thien-Hue, Vietnam",
+        "details": null
+    },
+    {
+        "original_location": "Risaralda, Colombia",
+        "details": {
+            "country": null,
+            "region": null,
+            "city": null
+        }
+    },
+    {
+        "original_location": "Oued Denna, Oued Abid, Oued Beth, Morocco",
+        "details": null
+    },
+    {
+        "original_location": "Silhouette Island, Seychelles",
+        "details": {
+            "country": null,
+            "region": null,
+            "city": null
+        }
+    },
+    {
+        "original_location": "Cueva La Barca, Isle of Pines, Cuba",
+        "details": null
+    },
+    {
+        "original_location": "Mount Victoria, Palawan, Philippines",
+        "details": null
+    },
+    {
+        "original_location": "Hainan Island, China",
+        "details": {
+            "country": null,
+            "region": null,
+            "city": null
+        }
+    },
+    {
+        "original_location": "Zagros Mountains, Lorestan, Iran",
+        "details": null
+    },
+    {
+        "original_location": "Mulanje Plateau, Malawi",
+        "details": null
+    },
+    {
+        "original_location": "Chao Phraya and Mekong basins in Cambodia, China, Lao PDR, Thailand, Vietnam",
+        "details": null
+    },
+    {
+        "original_location": "Cerrado, Brazil",
+        "details": {
+            "country": null,
+            "region": null,
+            "city": null
+        }
+    },
+    {
+        "original_location": "Northern Gulf of California, Mexico",
+        "details": null
+    },
+    {
+        "original_location": "Qinling Range, China",
+        "details": null
+    },
+    {
+        "original_location": "Qiaojia, Yunnan, China",
+        "details": {
+            "country": null,
+            "region": null,
+            "city": null
+        }
+    },
+    {
+        "original_location": "Nandyal and Giddalur, Andhra Pradesh, India",
+        "details": null
+    },
+    {
+        "original_location": "Fatu Hiva, Marquesas Islands, French Polynesia",
+        "details": {
+            "country": null,
+            "region": null,
+            "city": null
+        }
+    },
+    {
+        "original_location": "Coastal tropical and subtropical waters of Indo-Pacific and Atlantic Oceans",
+        "details": null
+    },
+    {
+        "original_location": "Maroantsetra to Andapa basin, Marojeju Massif, Madagascar",
+        "details": null
+    },
+    {
+        "original_location": "Western Cape Province, South Africa",
+        "details": {
+            "country": null,
+            "region": null,
+            "city": null
+        }
+    },
+    {
+        "original_location": "Annamite mountains, Viet Nam - Laos PDR border",
+        "details": null
+    },
+    {
+        "original_location": "Mauritius",
+        "details": {
+            "country": null,
+            "region": null,
+            "city": null
+        }
+    },
+    {
+        "original_location": "Beydaglari range, Antalaya, Turkey",
+        "details": null
+    },
+    {
+        "original_location": "Hoan Kiem Lake, Dong Mo Lake, Viet Nam, Suzhou Zoo, China",
+        "details": null
+    },
+    {
+        "original_location": "Ujung Kulon National Park, Java, Indonesia",
+        "details": {
+            "country": null,
+            "region": null,
+            "city": null
+        }
+    },
+    {
+        "original_location": "Northeastern Vietnam",
+        "details": {
+            "country": null,
+            "region": null,
+            "city": null
+        }
+    },
+    {
+        "original_location": "Western Australia, Australia",
+        "details": {
+            "country": null,
+            "region": null,
+            "city": null
+        }
+    },
+    {
+        "original_location": "Boni-Dodori Forest, Lamu area, Kenya",
+        "details": null
+    },
+    {
+        "original_location": "Rivulet beside the Kawasan River, Cebu, Philippines",
+        "details": null
+    },
+    {
+        "original_location": "St Katherine Mountains, Egypt",
+        "details": null
+    },
+    {
+        "original_location": "Marshes of Lake Alaotra, Madagascar",
+        "details": null
+    },
+    {
+        "original_location": "Sierra Nevada de Santa Marta, Colombia",
+        "details": {
+            "country": null,
+            "region": null,
+            "city": null
+        }
+    },
+    {
+        "original_location": "Edgbaston Station, central western Queensland, Australia",
+        "details": null
+    }
+]

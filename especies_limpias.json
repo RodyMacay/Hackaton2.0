@@ -1,0 +1,227 @@
+[
+    {
+        "species_name": "Abies beshanzuensis",
+        "common_name": "Baishan fir",
+        "type": "Plant (Tree)",
+        "location": {
+            "place_name": "Baishanzu Mountain",
+            "region": "Zhejiang",
+            "country": "China"
+        },
+        "estimated_population": 5,
+        "threats": [
+            "Agriculture",
+            "fire"
+        ]
+    },
+    {
+        "species_name": "Actinote zikani",
+        "common_name": null,
+        "type": "Insect",
+        "location": {
+            "place_name": "Near São Paulo",
+            "region": "Atlantic forest",
+            "country": "Brazil"
+        },
+        "estimated_population": null,
+        "threats": [
+            "Habitat loss from human expansion"
+        ]
+    },
+    {
+        "species_name": "Aipysurus foliosquama",
+        "common_name": "Leaf scaled sea-snake",
+        "type": "Reptile",
+        "location": {
+            "place_name": "Ashmore Reef and Hibernia Reef",
+            "region": "Timor Sea",
+            "country": "Australia"
+        },
+        "estimated_population": null,
+        "threats": [
+            "Unknown—probably degradation of coral reef habitat"
+        ]
+    },
+    {
+        "species_name": "Amanipodagrion gilliesi",
+        "common_name": "Amani flatwing",
+        "type": "Insect",
+        "location": {
+            "place_name": "Amani-Sigi Forest",
+            "region": "Usambara Mountains",
+            "country": "Tanzania"
+        },
+        "estimated_population": 500,
+        "threats": [
+            "Population pressure",
+            "water pollution"
+        ]
+    },
+    {
+        "species_name": "Antilophia bokermanni",
+        "common_name": "Araripe manakin",
+        "type": "Bird",
+        "location": {
+            "place_name": "Chapado do Araripe",
+            "region": "South Ceará",
+            "country": "Brazil"
+        },
+        "estimated_population": 779,
+        "threats": [
+            "Recreational facilities",
+            "water diversion"
+        ]
+    },
+    {
+        "species_name": "Antisolabis seychellensis",
+        "common_name": null,
+        "type": "Insect",
+        "location": {
+            "place_name": "Morne Blanc",
+            "region": "Mahé island",
+            "country": "Seychelles"
+        },
+        "estimated_population": null,
+        "threats": [
+            "Invasive species",
+            "climate change"
+        ]
+    },
+    {
+        "species_name": "Aphanius transgrediens",
+        "common_name": "Aci Gö toothcarp",
+        "type": "Fish",
+        "location": {
+            "place_name": "South-eastern shore of former Lake Aci",
+            "region": "Lake Aci",
+            "country": "Turkey"
+        },
+        "estimated_population": "Few hundred pairs",
+        "threats": [
+            "Competition",
+            "predation by Gambusia",
+            "road construction"
+        ]
+    },
+    {
+        "species_name": "Aproteles bulmerae",
+        "common_name": "Bulmer's fruit bat",
+        "type": "Mammal",
+        "location": {
+            "place_name": "Luplupwintern Cave",
+            "region": "Western Province",
+            "country": "Papua New Guinea"
+        },
+        "estimated_population": 150,
+        "threats": [
+            "Hunting",
+            "cave disturbance"
+        ]
+    },
+    {
+        "species_name": "Ardea insignis",
+        "common_name": "White bellied heron",
+        "type": "Bird",
+        "location": {
+            "place_name": "Bhutan and North East India",
+            "region": null,
+            "country": "Bhutan, India, Myanmar"
+        },
+        "estimated_population": 70,
+        "threats": [
+            "Hydropower development"
+        ]
+    },
+    {
+        "species_name": "Ardeotis nigriceps",
+        "common_name": "Great Indian bustard",
+        "type": "Bird",
+        "location": {
+            "place_name": "Rajasthan",
+            "region": "Gujarat",
+            "country": "India"
+        },
+        "estimated_population": 50,
+        "threats": [
+            "Agricultural development",
+            "energy transmission lines"
+        ]
+    },
+    {
+        "species_name": "Astrochelys yniphora",
+        "common_name": "Ploughshare tortoise",
+        "type": "Reptile",
+        "location": {
+            "place_name": "Baly Bay region",
+            "region": "northwestern Madagascar",
+            "country": "Madagascar"
+        },
+        "estimated_population": 440,
+        "threats": [
+            "Illegal collection for international pet trade"
+        ]
+    },
+    {
+        "species_name": "Atelopus balios",
+        "common_name": "Rio Pescado stubfoot toad",
+        "type": "Amphibian",
+        "location": {
+            "place_name": "Azuay and Cañar",
+            "region": null,
+            "country": "Ecuador"
+        },
+        "estimated_population": null,
+        "threats": [
+            "Chytridiomycosis",
+            "logging",
+            "agricultural expansion"
+        ]
+    },
+    {
+        "species_name": "Aythya innotata",
+        "common_name": "Madagascar pochard",
+        "type": "Bird",
+        "location": {
+            "place_name": "Volcanic lakes north of Bealanana",
+            "region": "Madagascar",
+            "country": "Madagascar"
+        },
+        "estimated_population": 80,
+        "threats": [
+            "Agriculture",
+            "hunting",
+            "fishing",
+            "introduced fish"
+        ]
+    },
+    {
+        "species_name": "Azurina eupalama",
+        "common_name": "Galapagos damsel fish",
+        "type": "Fish",
+        "location": {
+            "place_name": "Galapagos",
+            "region": null,
+            "country": "Ecuador"
+        },
+        "estimated_population": null,
+        "threats": [
+            "Climate change",
+            "oceanographic changes related to the 1982/1983 El Nino"
+        ]
+    },
+    {
+        "species_name": "Bahaba taipingensis",
+        "common_name": "Giant yellow croaker",
+        "type": "Fish",
+        "location": {
+            "place_name": "Chinese coast from Yangtze River",
+            "region": "East China Sea",
+            "country": "China"
+        },
+        "estimated_population": null,
+        "threats": [
+            "Over-fishing due to value of swim-bladder in traditional medicine"
+        ]
+    },
+    
+]

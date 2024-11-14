@@ -1,0 +1,20 @@
+:root {
+    --color-background: #F3F4F6;
+    --color-surface: #FFFFFF;
+    --color-text: #1F2937;
+}
+
+.dark {
+    --color-background: #1F2937;
+    --color-surface: #374151;
+    --color-text: #F3F4F6;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+.bg-surface {
+    background-color: var(--color-surface);
+}

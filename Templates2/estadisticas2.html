@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estadisticas 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-200">
+    <nav class="bg-white border-b border-gray-300">
+        <div class="flex justify-between items-center px-9">
+            <!-- Aumenté el padding aquí para añadir espacio en los lados -->
+            <!-- Ícono de Menú -->
+            <button id="menuBtn">
+                <i class="fas fa-bars text-cyan-500 text-lg"></i>
+            </button>
+
+            <!-- Logo -->
+            <div class="ml-1">
+                <img src="./img/tierra.png" alt="logo" class="h-20 w-28">
+            </div>
+
+            <!-- Ícono de Notificación y Perfil -->
+            <div class="space-x-4">
+                <button>
+                    <i class="fas fa-bell text-cyan-500 text-lg"></i>
+                </button>
+
+                <!-- Botón de Perfil -->
+                <button>
+                    <i class="fas fa-user text-cyan-500 text-lg"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Barra lateral -->
+    <div id="sideNav" class="lg:block hidden bg-white w-64 h-screen fixed rounded-none border-none flex flex-col justify-between">
+        <!-- Contenido superior -->
+        <div>
+            <div class="px-6 py-4 text-3xl font-bold border-b border-gray-300 text-center">
+                Dashboard
+            </div>
+            <!-- Foto de perfil debajo del título Dashboard -->
+            <div class="flex justify-center mt-4 mb-4">
+                <img src="./img/hasbullita.jfif" alt="User Profile" class="w-24 h-24 rounded-full border-4 border-green-300">
+            </div>
+            <nav class="flex flex-col mt-6 space-y-4 text-2xl text-left">
+                <a href="#" class="px-6 py-2 transition duration-300 hover:bg-green-300 rounded flex items-center">
+                    <i class="fa-solid fa-house mr-3"></i> Home
+                </a>
+                <a href="#" class="px-6 py-2 transition duration-300 hover:bg-green-300 rounded flex items-center">
+                    <i class="fa-solid fa-chart-simple mr-3"></i> Estadísticas
+                </a>
+                <a href="#" class="px-6 py-2 transition duration-300 hover:bg-green-300 rounded flex items-center">
+                    <i class="fa-solid fa-hippo mr-3"></i> Tipo de especies
+                </a>
+                <a href="#" class="px-6 py-2 transition duration-300 hover:bg-green-300 rounded flex items-center">
+                    <i class="fa-solid fa-globe mr-3"></i> Análisis Geográfico
+                </a>
+                <a href="#" class="px-6 py-2 transition duration-300 hover:bg-green-300 rounded flex items-center">
+                    <i class="fa-solid fa-skull-crossbones mr-3"></i> Amenazas
+                </a>
+            </nav>
+        </div>
+        <!-- Botón de Logout en la parte inferior -->
+        <div class="px-6 py-4 border-t border-gray-300">
+            <button class="w-full px-4 py-2 font-semibold text-green-700 bg-green-200 rounded hover:bg-green-300">
+                <i class="fa-solid fa-right-from-bracket"></i> Logout
+            </button>
+        </div>
+    </div>
+
+    <div class="lg:ml-64 lg:pl-4 lg:flex lg:flex-col lg:w-75% mt-5 mx-2">
+        <!-- Buscador -->
+        <div class="bg-white rounded-full border-none p-3 mb-4 shadow-md">
+            <div class="flex items-center">
+                <i class="px-3 fas fa-search ml-1"></i>
+                <input type="text" placeholder="Buscar..." class="ml-3 focus:outline-none w-full">
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script>
+        // Agregar lógica para mostrar/ocultar la navegación lateral al hacer clic en el ícono de menú
+        const menuBtn = document.getElementById('menuBtn');
+        const sideNav = document.getElementById('sideNav');
+
+        menuBtn.addEventListener('click', () => {
+            sideNav.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
