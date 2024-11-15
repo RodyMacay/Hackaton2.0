@@ -11,6 +11,9 @@ from django.contrib.auth.decorators import login_required
 
 from apps.security.forms.auth_forms import CustomAuthenticationForm, CustomUserCreationForm
 
+from django.shortcuts import redirect
+from django.contrib.auth.views import LoginView
+from django.contrib import messages
 
 class LogLoginView(LoginView):
     template_name = 'auth/login.html'
@@ -19,14 +22,23 @@ class LogLoginView(LoginView):
     def dispatch(self, request, *args, **kwargs):
         print("==>", request)
         if request.user.is_authenticated:
-            return redirect('/') 
+            return redirect('/')
         return super().dispatch(request, *args, **kwargs)
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['title']='Login'
-        context['grabar']='Login'
+        context['title'] = 'Login'
+        context['grabar'] = 'Login'
+        print(context)
         return context
+    
+    def form_invalid(self, form):
+        # Este método se llama cuando el formulario es inválido.
+        # Aquí puedes imprimir los errores para ver qué está fallando.
+        print("Errores en el formulario:", form.errors)
+        messages.error(self.request, "Hubo un error en el formulario. Por favor, verifica los datos ingresados.")
+        return super().form_invalid(form)
+
     
 class RegisterView(CreateView):
     template_name = 'auth/register.html'
