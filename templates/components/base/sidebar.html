@@ -1,0 +1,66 @@
+{% load static %}
+
+<body class="bg-gray-200">
+    <!-- Navbar -->
+    {% include "components/base/navbar.html" %}
+
+    <!-- Barra lateral -->
+    <div id="sideNav"
+    class="fixed top-0 left-0 w-64 h-full bg-white shadow-lg transform -translate-x-full lg:translate-x-0 lg:block transition-transform z-40">
+    <div>
+        <div class="px-6 py-4 text-xl font-bold border-b border-gray-200 text-center">
+            Dashboard
+        </div>
+        <div class="flex flex-col items-center mt-8">
+            <!-- Imagen de Usuario -->
+            <img src="{% static 'img/hasbullita.jfif' %}" alt="User Profile"
+                class="w-24 h-24 rounded-full border-4 border-blue-500 shadow-md">
+            <!-- Nombre del Usuario -->
+            <h3 class="mt-4 text-lg font-semibold text-gray-700">Nombre del Usuario</h3>
+            <!-- Rol del Usuario -->
+            <p class="text-sm text-gray-500">Administrador</p>
+        </div>
+        <!-- Menú de Navegación -->
+        <nav class="flex flex-col mt-6 space-y-4 px-6">
+            <a href="#"
+                class="flex items-center px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-700 rounded transition">
+                <i class="fas fa-home mr-3"></i> Home
+            </a>
+            <a href="#"
+                class="flex items-center px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-700 rounded transition">
+                <i class="fas fa-chart-bar mr-3"></i> Estadísticas
+            </a>
+            <a href="#"
+                class="flex items-center px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-700 rounded transition">
+                <i class="fas fa-paw mr-3"></i> Tipo de Especies
+            </a>
+            <a href="#"
+                class="flex items-center px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-700 rounded transition">
+                <i class="fas fa-globe mr-3"></i> Análisis Geográfico
+            </a>
+            <a href="#"
+                class="flex items-center px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-700 rounded transition">
+                <i class="fas fa-exclamation-triangle mr-3"></i> Amenazas
+            </a>
+        </nav>
+    </div>
+
+    <!-- Botón de Logout -->
+    <div class="px-6 py-4 border-t border-gray-200 mt-6">
+        <button
+            class="w-full px-4 py-2 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300 transition">
+            <i class="fas fa-sign-out-alt mr-2"></i> Logout
+        </button>
+    </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const sideNav = document.getElementById('sideNav');
+
+        menuBtn.addEventListener('click', () => {
+            sideNav.classList.toggle('-translate-x-full');
+        });
+    </script>
+</body>

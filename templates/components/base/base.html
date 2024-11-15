@@ -14,7 +14,6 @@
 
     <meta name="keywords" content="{% block meta_keywords %}palabra clave 1, palabra clave 2, palabra clave 3{% endblock %}">
 
-    <meta name="author" content="Tu Nombre o Nombre de la Empresa">
 
     <meta name="robots" content="index, follow">
 
@@ -23,37 +22,43 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.4s ease-in-out;
+        }
+    </style>
+
+    {% block custom_styles %}{% endblock %}
 </head>
 
 <body class="bg-gray-200">
-
-    <header>
+        <!-- Incluir la alerta -->
+        {% include 'components/base/alerta.html' %}
         <!-- Sidebar -->
-        {% include 'components/sidebar.html' %}
-    </header>
-
-    <main>
+        {% include 'components/base/sidebar.html' %}
         <!-- Contenido dinámico -->
         <div class="lg:ml-64 lg:pl-4 lg:flex lg:flex-col lg:w-75% mt-5 mx-2">
             {% block content %}
             <!-- Contenido dinámico de la página -->
             {% endblock %}
         </div>
-    </main>
 
-    <!-- Footer -->
-    <footer>
-        {% include 'components/footer.html' %}
-    </footer>
-
-    <!-- Script -->
-    <script>
-        const menuBtn = document.getElementById('menuBtn');
-        const sideNav = document.getElementById('sideNav');
-
-        menuBtn.addEventListener('click', () => {
-            sideNav.classList.toggle('hidden');
-        });
-    </script>
+        {% block custom_scripts %}
+        
+        {% endblock  %}
 </body>
 </html>

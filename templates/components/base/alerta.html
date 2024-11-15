@@ -1,0 +1,47 @@
+<!-- Alerta HTML -->
+<div id="alert" class="fixed bottom-4 left-4 hidden p-4 max-w-xs bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 rounded-lg shadow-lg transition-opacity duration-300 z-50">
+    <div class="flex items-center">
+        <i data-lucide="alert-circle" class="mr-2"></i>
+        <span id="alert-message"></span>
+    </div>
+</div>
+
+<style>
+    /* Añadir animación de desvanecimiento */
+    .fade-out {
+        animation: fadeOut 0.5s forwards;
+    }
+
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+</style>
+
+<script>
+    // Función para mostrar la alerta
+    function showAlert(message) {
+        const alertBox = document.getElementById('alert');
+        const alertMessage = document.getElementById('alert-message');
+        
+        alertMessage.textContent = message;
+        alertBox.classList.remove('hidden');
+        alertBox.classList.remove('fade-out'); // Asegúrate de que no tenga la clase de desvanecimiento al mostrarla
+        lucide.createIcons();
+
+        // Fade out the alert after 3 seconds
+        setTimeout(() => {
+            alertBox.classList.add('fade-out');
+        }, 3000);
+
+        // Hide the alert after the fade-out animation completes
+        alertBox.addEventListener('animationend', () => {
+            alertBox.classList.add('hidden');
+            alertBox.classList.remove('fade-out');
+        }, { once: true });
+    }
+</script>

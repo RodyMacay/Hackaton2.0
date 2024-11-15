@@ -1,0 +1,35 @@
+{% load static %}
+
+<nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+            <!-- Botón para Sidebar -->
+            <button id="menuBtn" class="text-gray-600 text-2xl lg:hidden focus:outline-none" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Logo -->
+            <div class="flex items-center space-x-3">
+                <img src="{% static 'img/tierra.png' %}" alt="EcoGuard Logo" class="h-10 w-10 rounded-full">
+                <h1 class="text-2xl font-bold tracking-wide">EcoGuard</h1>
+            </div>
+
+            <!-- Opciones del Usuario -->
+            <div class="hidden lg:flex items-center space-x-6">
+                <button aria-label="Notificaciones" class="relative group focus:outline-none">
+                    <i class="fas fa-bell text-lg text-gray-600 group-hover:text-blue-500 transition"></i>
+                    <span class="absolute top-0 right-0 bg-red-600 text-xs rounded-full w-4 h-4 flex items-center justify-center">
+                        3
+                    </span>
+                </button>
+                <button aria-label="Perfil de Usuario" class="focus:outline-none">
+                    <i class="fas fa-user text-lg text-gray-600 hover:text-blue-500 transition"></i>
+                </button>
+                <button
+                    class="px-4 py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300 transition">
+                    Logout
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
