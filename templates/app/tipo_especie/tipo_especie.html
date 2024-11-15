@@ -60,11 +60,25 @@
 
     .chart-container {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         width: 100%;
-        min-height: 400px; /* Altura mínima ajustada */
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
     }
+    
+    #populationChart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        max-width: 500px;
+        max-height: 500px;
+        margin: 0 auto;
+    }
+    
 
     .chart-left {
         display: flex;
@@ -230,11 +244,12 @@
 
 
 {% block custom_scripts %}
-<script>
+{% comment %} <script>
+    
     document.addEventListener('DOMContentLoaded', function () {
         // Datos iniciales obtenidos del backend (pasados a través del contexto)
         const initialData = {{ filtered_data|safe }}; // Datos iniciales de Django
-    
+        console.log("Initial Data from Django:", initialData);
         // Función para generar el gráfico de población (Circular)
         function generatePopulationChart(data) {
             // Limpiar el gráfico antes de redibujarlo
@@ -352,6 +367,61 @@
 
         // Cargar los datos iniciales
         fetchFilteredData();
-    });
+    }); {% endcomment %}
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Datos de prueba estáticos
+            const initialData = [
+                { "Type": "Mammal", "Estimated Population": 500 },
+                { "Type": "Bird", "Estimated Population": 300 },
+                { "Type": "Reptile", "Estimated Population": 200 },
+                { "Type": "Fish", "Estimated Population": 100 },
+                { "Type": "Insect", "Estimated Population": 50 }
+            ];
+    
+            console.log("Datos de prueba:", initialData);
+    
+            // Función para generar el gráfico de población (Circular)
+            function generatePopulationChart(data) {
+                // Limpiar el gráfico antes de redibujarlo
+                d3.select("#populationChart").html("");
+                console.log("Datos recibidos para el gráfico de población:", data);
+    
+                const color = d3.scaleOrdinal(d3.schemeCategory10);
+                const width = 400;  // Ancho del SVG
+                const height = 400; // Altura del SVG
+                const radius = Math.min(width, height) / 2 - 10;
+    
+                const svg = d3.select('#populationChart')
+                    .append('svg')
+                    .attr('width', '100%')
+                    .attr('height', '100%')
+                    .attr('viewBox', `0 0 ${width} ${height}`)
+                    .append('g')
+                    .attr('transform', `translate(${width / 2}, ${height / 2})`);
+    
+                const pie = d3.pie().value(d => d['Estimated Population']);
+                const arc = d3.arc().innerRadius(0).outerRadius(radius);
+    
+                const pieData = pie(data);
+                console.log("Datos procesados para el gráfico de pie:", pieData);
+    
+                svg.selectAll('path')
+                    .data(pieData)
+                    .enter()
+                    .append('path')
+                    .attr('d', arc)
+                    .attr('fill', d => color(d.data['Type']))
+                    .attr('stroke', 'white')
+                    .attr('stroke-width', 2);
+            }
+    
+            // Llamada para generar el gráfico con los datos de prueba
+            generatePopulationChart(initialData);
+        });
+    </script>
+    
+    
 </script>
 {% endblock %}
