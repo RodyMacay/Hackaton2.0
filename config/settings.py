@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'apps',
     'apps.core',
     'apps.security',
+    'apps.clasificacion_especie',
 ]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
