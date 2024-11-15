@@ -13,6 +13,7 @@ class SpeciesFilterView(View):
             data = load_species_data(file_path)
             print("Datos cargados con éxito. Filas:", data.shape[0])
 
+            # Obtén los filtros de la solicitud
             filters = {
                 'species_type': request.GET.get('species_type', None),
                 'location': request.GET.get('location', None),
@@ -22,30 +23,32 @@ class SpeciesFilterView(View):
             }
             print("Filtros iniciales:", filters)
 
+            # Valida los filtros
             filters = validate_filters(filters)
             print("Filtros validados:", filters)
 
-            # Explora los valores únicos antes de la conversión
-            print("Valores únicos en Estimated Population:", data['Estimated Population'].unique())
-
+            # Convierte las poblaciones
             data['Estimated Population'] = data['Estimated Population'].apply(self.convert_population_to_int)
             print("Población convertida. Ejemplo:", data['Estimated Population'].head())
 
+            # Filtra los datos
             min_population = int(filters['min_population'])
             max_population = int(filters['max_population'])
             filtered_data = data[(data['Estimated Population'] >= min_population) & (data['Estimated Population'] <= max_population)]
-            print("Filtrado por población. Filas restantes:", filtered_data.shape[0])
-
             filtered_data = filter_species_data(filtered_data, filters)
             print("Filtrado por criterios adicionales. Filas restantes:", filtered_data.shape[0])
 
-            conservation_names = data['Conservation Name'].unique()
+            # Prepara los datos para el gráfico en formato JSON esperado
+            initial_data = filtered_data[['Type', 'Estimated Population']].dropna().to_dict(orient='records')
+            print("Datos para initialData:", initial_data[:5])  # Muestra los primeros 5 registros para verificación
+
+            # Datos contextuales para el template
             context = {
-                'filtered_data': filtered_data.to_dict(orient='records'),
+                'filtered_data': initial_data,  # Envía los datos filtrados como un array JSON
                 'filters': filters,
                 'species_types': data['Type'].unique(),
                 'locations': data['País'].unique(),
-                'conservation_names': conservation_names,
+                'conservation_names': data['Conservation Name'].unique(),
             }
             print("Contexto preparado:", context.keys())
 
@@ -57,12 +60,19 @@ class SpeciesFilterView(View):
 
     def convert_population_to_int(self, population_str):
         try:
-            if population_str == "Unknown":
+            if pd.isna(population_str) or population_str == "Unknown":
                 return 0
-            if "few hundred pairs" in str(population_str).lower():
+            population_str = str(population_str).lower()
+            if "few hundred pairs" in population_str:
                 return 200
-            population = int(''.join(filter(str.isdigit, str(population_str))))
-            return population
+            if "mature individuals" in population_str or "individuals" in population_str:
+                return int(''.join(filter(str.isdigit, population_str)))
+            if "pairs" in population_str:
+                return int(''.join(filter(str.isdigit, population_str))) * 2
+            if "sub-populations" in population_str:
+                return int(''.join(filter(str.isdigit, population_str))) * 10
+
+            return int(''.join(filter(str.isdigit, population_str)))
         except ValueError:
             print(f"Error convirtiendo población: {population_str}")
             return 0

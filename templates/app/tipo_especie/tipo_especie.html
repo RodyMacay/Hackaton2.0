@@ -11,53 +11,6 @@
         accent-color: #3b82f6;
     }
 
-    svg {
-        width: 100%;
-        height: 100%;
-    }
-
-    .responsive-svg {
-        position: relative;
-        padding-bottom: 75%;
-        height: 0;
-        overflow: hidden;
-    }
-
-    .responsive-svg svg {
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-
-    .flex-center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .legend-container {
-        margin-left: 20px;
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-    }
-
-    .legend-item {
-        display: flex;
-        align-items: center;
-        margin-bottom: 8px;
-    }
-
-    .legend-color {
-        width: 20px;
-        height: 20px;
-        margin-right: 10px;
-    }
-
-    .legend-text {
-        font-size: 14px;
-    }
-
     .chart-container {
         display: flex;
         justify-content: center;
@@ -78,8 +31,8 @@
         max-height: 500px;
         margin: 0 auto;
     }
-    
 
+    /* Flex and responsive layout adjustments */
     .chart-left {
         display: flex;
         justify-content: center;
@@ -97,37 +50,11 @@
         padding-left: 20px;
     }
 
-    .chart-container {
-        min-height: 350px; /* Altura mínima ajustada */
-        padding-top: 20px;
-    }
-
     .container-fluid {
         max-width: 100%;
         padding: 0 10px;
     }
 
-    /* Asegurar que el gráfico esté centrado */
-    .flex-center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .chart-left svg {
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-    .chart-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        width: 100%;
-        gap: 20px;
-    }
-
-    /* Asegurar el espacio adecuado para las pantallas pequeñas */
     @media (max-width: 768px) {
         .chart-container {
             flex-direction: column;
@@ -209,8 +136,8 @@
             <section class="md:col-span-2 bg-white p-6 rounded-lg shadow flex justify-center items-center" style="height: 500px; padding: 20px;">
                 <h2 class="text-lg font-semibold text-gray-800 mb-4 text-center w-full">Distribución de Población por Tipo de Especie</h2>
                 <div class="chart-container flex-center">
-                    <div id="populationChart" class="chart-left responsive-svg rounded-md" style="height: 100%; width: 100%; max-width: 700px; padding: 20px; margin: 0 auto;">
-                        <span class="text-gray-400">Gráfico de Población</span>
+                    <div id="populationChart" class="chart-left responsive-svg rounded-md">
+                        <!-- Gráfico de Población aquí -->
                     </div>
                 </div>
             </section>
@@ -237,72 +164,52 @@
     <footer class="bg-gray-800 text-white p-4 mt-8">
         <p class="text-center">Desarrollado para análisis de biodiversidad.</p>
     </footer>
-
-
-    
 {% endblock %}
 
-
 {% block custom_scripts %}
-{% comment %} <script>
-    
+<script>
     document.addEventListener('DOMContentLoaded', function () {
-        // Datos iniciales obtenidos del backend (pasados a través del contexto)
-        const initialData = {{ filtered_data|safe }}; // Datos iniciales de Django
-        console.log("Initial Data from Django:", initialData);
-        // Función para generar el gráfico de población (Circular)
-        function generatePopulationChart(data) {
-            // Limpiar el gráfico antes de redibujarlo
-            d3.select("#populationChart").html("");
-            console.log("Datos recibidos para el gráfico de población:", data);
+        const initialData = {{ filtered_data|safe }};  // Datos iniciales de Django
 
+        function generatePopulationChart(data) {
+            d3.select("#populationChart").html("");
             const color = d3.scaleOrdinal(d3.schemeCategory10);
-            const populationChart = d3.select('#populationChart')
+            const width = 400;
+            const height = 400;
+            const radius = Math.min(width, height) / 2 - 10;
+
+            const svg = d3.select('#populationChart')
                 .append('svg')
                 .attr('width', '100%')
                 .attr('height', '100%')
+                .attr('viewBox', `0 0 ${width} ${height}`)
                 .append('g')
-                .attr('transform', 'translate(150,150)');
+                .attr('transform', `translate(${width / 2}, ${height / 2})`);
 
-            const pie = d3.pie().value(d => {
-                const population = parseFloat(d['Estimated Population']) || 0;
-                console.log(`Procesando tipo ${d['Type']}, población: ${population}`);
-                return population;
-            });
-            const arc = d3.arc().innerRadius(0).outerRadius(100);
+            const pie = d3.pie().value(d => d['Estimated Population']);
+            const arc = d3.arc().innerRadius(0).outerRadius(radius);
 
-            const pieChartData = pie(data.filter(d => d['Estimated Population'] && !isNaN(d['Estimated Population'])));
-            console.log("Datos procesados para el gráfico de población:", pieChartData); // Depuración
+            const pieData = pie(data);
 
-            populationChart.selectAll('path')
-                .data(pieChartData)
-                .enter().append('path')
+            svg.selectAll('path')
+                .data(pieData)
+                .enter()
+                .append('path')
                 .attr('d', arc)
                 .attr('fill', d => color(d.data['Type']))
                 .attr('stroke', 'white')
                 .attr('stroke-width', 2);
         }
 
-        // Llamada para generar el gráfico de población con los datos iniciales
-        if (initialData && initialData.length > 0) {
-            generatePopulationChart(initialData);
-        } else {
-            console.error("No hay datos disponibles para el gráfico inicial");
-        }
+        // Inicializar el gráfico con los datos iniciales del servidor
+        generatePopulationChart(initialData);
 
-        // Función para obtener los datos filtrados desde el servidor
+        // Función para obtener los datos filtrados
         function fetchFilteredData() {
             const speciesType = document.getElementById('speciesType').value;
             const location = document.getElementById('locationFilter').value;
             const conservationStatus = document.getElementById('conservationStatus').value;
             const populationRange = document.getElementById('populationRange').value;
-
-            console.log("Valores de los filtros:", {
-                speciesType,
-                location,
-                conservationStatus,
-                populationRange
-            });
 
             const url = `/filter-species/?species_type=${speciesType}&location=${location}&conservation_status=${conservationStatus}&min_population=0&max_population=${populationRange}`;
 
@@ -310,118 +217,13 @@
                 .then(response => response.json())
                 .then(data => {
                     console.log("Datos filtrados recibidos:", data);
-                    fillSpeciesTypeSelect(data);
-                    fillLocationSelect(data);
-                    fillConservationStatusSelect(data);
-
-                    generatePopulationChart(data); // Regenerar el gráfico con los datos filtrados
+                    generatePopulationChart(data);
                 })
                 .catch(error => console.error('Error fetching data:', error));
         }
 
-        // Función para llenar los select con los datos de filtros
-        function fillSpeciesTypeSelect(data) {
-            const speciesTypes = [...new Set(data.map(item => item['Type']))];
-            const select = document.getElementById('speciesType');
-            select.innerHTML = "<option value=''>Selecciona un tipo...</option>";
-            speciesTypes.forEach(type => {
-                const option = document.createElement('option');
-                option.value = type;
-                option.text = type;
-                select.appendChild(option);
-            });
-        }
-
-        function fillLocationSelect(data) {
-            const locations = [...new Set(data.map(item => item['País']))];
-            const select = document.getElementById('locationFilter');
-            select.innerHTML = "<option value=''>Selecciona un país...</option>";
-            locations.forEach(location => {
-                const option = document.createElement('option');
-                option.value = location;
-                option.text = location;
-                select.appendChild(option);
-            });
-        }
-
-        function fillConservationStatusSelect(data) {
-            const conservationStatuses = [...new Set(data.map(item => item['Conservation Name']))];
-            const select = document.getElementById('conservationStatus');
-            select.innerHTML = "<option value=''>Selecciona un estado...</option>";
-            conservationStatuses.forEach(status => {
-                const option = document.createElement('option');
-                option.value = status;
-                option.text = status;
-                select.appendChild(option);
-            });
-        }
-
-        // Cargar los filtros cuando cambian
-        document.getElementById('speciesType').addEventListener('change', fetchFilteredData);
-        document.getElementById('locationFilter').addEventListener('change', fetchFilteredData);
-        document.getElementById('conservationStatus').addEventListener('change', fetchFilteredData);
-        document.getElementById('populationRange').addEventListener('input', function (e) {
-            document.getElementById('populationValue').textContent = e.target.value;
-            fetchFilteredData();
-        });
-
-        // Cargar los datos iniciales
-        fetchFilteredData();
-    }); {% endcomment %}
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Datos de prueba estáticos
-            const initialData = [
-                { "Type": "Mammal", "Estimated Population": 500 },
-                { "Type": "Bird", "Estimated Population": 300 },
-                { "Type": "Reptile", "Estimated Population": 200 },
-                { "Type": "Fish", "Estimated Population": 100 },
-                { "Type": "Insect", "Estimated Population": 50 }
-            ];
-    
-            console.log("Datos de prueba:", initialData);
-    
-            // Función para generar el gráfico de población (Circular)
-            function generatePopulationChart(data) {
-                // Limpiar el gráfico antes de redibujarlo
-                d3.select("#populationChart").html("");
-                console.log("Datos recibidos para el gráfico de población:", data);
-    
-                const color = d3.scaleOrdinal(d3.schemeCategory10);
-                const width = 400;  // Ancho del SVG
-                const height = 400; // Altura del SVG
-                const radius = Math.min(width, height) / 2 - 10;
-    
-                const svg = d3.select('#populationChart')
-                    .append('svg')
-                    .attr('width', '100%')
-                    .attr('height', '100%')
-                    .attr('viewBox', `0 0 ${width} ${height}`)
-                    .append('g')
-                    .attr('transform', `translate(${width / 2}, ${height / 2})`);
-    
-                const pie = d3.pie().value(d => d['Estimated Population']);
-                const arc = d3.arc().innerRadius(0).outerRadius(radius);
-    
-                const pieData = pie(data);
-                console.log("Datos procesados para el gráfico de pie:", pieData);
-    
-                svg.selectAll('path')
-                    .data(pieData)
-                    .enter()
-                    .append('path')
-                    .attr('d', arc)
-                    .attr('fill', d => color(d.data['Type']))
-                    .attr('stroke', 'white')
-                    .attr('stroke-width', 2);
-            }
-    
-            // Llamada para generar el gráfico con los datos de prueba
-            generatePopulationChart(initialData);
-        });
-    </script>
-    
-    
+        document.getElementById('applyFilters').addEventListener('click', fetchFilteredData);
+        document.getElementById('resetFilters').addEventListener('click', () => location.reload());
+    });
 </script>
 {% endblock %}
