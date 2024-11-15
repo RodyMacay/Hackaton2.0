@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'apps',
     'apps.core',
     'apps.security',
+    'apps.amenazas',
 ]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

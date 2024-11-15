@@ -33,62 +33,33 @@
         <h2 class="text-2xl font-semibold text-green-700 text-center mb-6">
           Registro
         </h2>
-        <form action="#" method="POST" class="space-y-4">
+        <form method="POST" class="space-y-4">
+          {% csrf_token %}
+          
           <div>
-            <label class="block text-sm font-medium text-green-800"
-              >Nombre Completo</label
-            >
-            <input
-              type="text"
-              name="nombre"
-              class="mt-1 block w-full px-4 py-2 border border-green-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
-              placeholder="Tu nombre completo"
-              required
-            />
+              <label class="block text-sm font-medium text-green-800">Nombre de Usuario</label>
+              {{ form.username }}
           </div>
+
           <div>
-            <label class="block text-sm font-medium text-green-800"
-              >Correo Electrónico</label
-            >
-            <input
-              type="email"
-              name="email"
-              class="mt-1 block w-full px-4 py-2 border border-green-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
-              placeholder="Tu correo electrónico"
-              required
-            />
+              <label class="block text-sm font-medium text-green-800">Correo Electrónico</label>
+              {{ form.email }}
           </div>
+
           <div>
-            <label class="block text-sm font-medium text-green-800"
-              >Contraseña</label
-            >
-            <input
-              type="password"
-              name="password"
-              class="mt-1 block w-full px-4 py-2 border border-green-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
-              placeholder="Tu contraseña"
-              required
-            />
+              <label class="block text-sm font-medium text-green-800">Contraseña</label>
+              {{ form.password1 }}
           </div>
+
           <div>
-            <label class="block text-sm font-medium text-green-800"
-              >Confirmar Contraseña</label
-            >
-            <input
-              type="password"
-              name="confirm_password"
-              class="mt-1 block w-full px-4 py-2 border border-green-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
-              placeholder="Confirma tu contraseña"
-              required
-            />
+              <label class="block text-sm font-medium text-green-800">Confirmar Contraseña</label>
+              {{ form.password2 }}
           </div>
-          <button
-            type="submit"
-            class="w-full py-2 px-4 bg-green-600 text-white font-semibold rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
-          >
-            Registrarse
+
+          <button type="submit" class="w-full py-2 px-4 bg-green-600 text-white font-semibold rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
+              Registrarse
           </button>
-        </form>
+      </form>
         <p class="text-sm text-green-700 text-center mt-4">
           ¿Ya tienes cuenta?
           <a href="#" class="text-blue-600 hover:underline">Inicia sesión</a>

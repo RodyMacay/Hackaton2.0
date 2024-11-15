@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('apps.security.urls')),
     path('', include('apps.geografico.urls')),
+    path('', include('apps.amenazas.urls')),
     # path('', include('apps.core.urls')),
 ]

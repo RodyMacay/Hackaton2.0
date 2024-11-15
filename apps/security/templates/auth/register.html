@@ -8,38 +8,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Registro</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        /* Estilo para el fondo con blur */
-        .bg-blur {
-            background-image: url('{% static 'img/yasuni' %}'); /* Usa la ruta de la imagen aquí */
-            background-size: cover;
-            background-position: center;
-            filter: blur(8px); /* Nivel de desenfoque */
-        }
-    </style>
+    
 </head>
-<body class="relative flex items-center justify-center min-h-screen">
+<body class="flex min-h-screen bg-gray-100">
+    <!-- Imagen Izquierda Ocupando Toda la Mitad Izquierda -->
+    <div class="w-1/2 h-screen relative">
+      <img
+        src="{% static 'img/yasuni.png' %}"
+        alt="Imagen de Naturaleza"
+        class="w-full h-full object-cover"
+      />
+      <div
+        class="absolute bottom-0 left-0 p-4 bg-black bg-opacity-50 text-white text-sm"
+      >
+        <p>Grupo <strong>PeakyCoders 🎩🔫🥃</strong></p>
+        <p>en Milagro, Ecuador</p>
+      </div>
+    </div>
 
-    <!-- Imagen de Fondo Difuminada -->
-    <div class="absolute inset-0 bg-blur"></div>
-
-    <!-- Contenedor Principal con Fondo Transparente -->
-    <div class="relative bg-white bg-opacity-80 rounded-lg shadow-lg overflow-hidden max-w-4xl flex">
-
-        <!-- Panel de Información -->
-        <div class="w-1/3 bg-green-200 bg-opacity-80 p-6">
-            <h2 class="text-xl font-semibold text-green-700 mb-4">Información de la App</h2>
-            <p class="text-green-800 text-sm mb-4">Esta aplicación está diseñada para ayudar a los usuarios a registrar sus datos de manera rápida y segura.</p>
-            <ul class="space-y-2 text-green-800">
-                <li>💡 Registro rápido y seguro.</li>
-                <li>🌱 Inspirada en la naturaleza.</li>
-                <li>📞 Soporte y ayuda al usuario.</li>
-            </ul>
-        </div>
-
-        <!-- Formulario de Registro -->
-        <div class="w-2/3 p-8 bg-white bg-opacity-90">
-            <h2 class="text-2xl font-semibold text-green-700 text-center mb-6">Registro</h2>
+    <!-- Formulario de Inicio de Sesión en la Mitad Derecha con Imagen de Fondo -->
+    <div class="w-1/2 flex items-center justify-center form-bg">
+      <div
+        class="w-full max-w-md p-8 bg-green-100 bg-opacity-80 shadow-lg rounded-lg"
+      >
+        <h2 class="text-2xl font-semibold text-green-700 text-center mb-6">
+          Registro
+        </h2>
             <form method="POST" class="space-y-4">
                 {% csrf_token %}
                 
@@ -68,7 +62,15 @@
                 </button>
             </form>
 
-            <p class="text-sm text-green-700 text-center mt-4">¿Ya tienes cuenta? <a href="{% url 'security:login' %}" class="text-blue-600 hover:underline">Inicia sesión</a></p>
+            <p class="text-sm text-green-700 text-center mt-4">
+                ¿Ya tienes cuenta?
+                <a href="#" class="text-blue-600 hover:underline">Inicia sesión</a>
+              </p>
+              <p class="text-sm text-center text-gray-700 mt-2">
+                <a href="#" class="text-blue-600 hover:underline"
+                  >Mostrar más opciones de acceso</a
+                >
+              </p>
         </div>
     </div>
 </body>
