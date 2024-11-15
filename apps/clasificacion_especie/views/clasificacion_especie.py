@@ -36,14 +36,20 @@ class SpeciesFilterView(View):
             # Filtrar los datos con base en los filtros adicionales (tipo, ubicación, estado de conservación)
             filtered_data = filter_species_data(filtered_data, filters)
 
-            # Pasar los filtros y los datos a la plantilla
+            # Extrae los nombres de conservación y pásalos como un contexto
+            conservation_names = data['Conservation Name'].unique()
+
+
             context = {
                 'filtered_data': filtered_data.to_dict(orient='records'),
                 'filters': filters,
                 'species_types': data['Type'].unique(),
-                'locations': data['Location(s)'].unique(),
-                'conservation_statuses': data['Conservation Status'].unique(),
+                'locations': data['País'].unique(),
+                'conservation_names': conservation_names,  # Solo los nombres de conservación
             }
+
+
+
 
             # Renderizar la plantilla y pasar los datos filtrados
             return render(request, 'app/tipo_especie/tipo_especie.html', context)
@@ -53,7 +59,7 @@ class SpeciesFilterView(View):
 
     def convert_population_to_int(self, population_str):
         """
-        Convierte el valor de población de texto (como '5 mature individuals') a un número entero.
+        Convierte el valor de población de texto (como '10 sub-populations') a un número entero.
         """
         try:
             # Extraemos solo el número de la población, eliminando cualquier texto adicional
