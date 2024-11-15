@@ -1,10 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-    
-<body>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Mi Aplicación{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-200">
+    <!-- Incluir el dashboard -->
     {% include 'components/dashboard2.html' %}
-    {% block content %}
+
+    <!-- Contenido dinámico -->
+    <div class="lg:ml-64 lg:pl-4 lg:flex lg:flex-col lg:w-75% mt-5 mx-2">
+        {% block content %}
         
-    {% endblock %}
+        {% endblock %}
+    </div>
+
+    <!-- Script -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const sideNav = document.getElementById('sideNav');
+
+        menuBtn.addEventListener('click', () => {
+            sideNav.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
